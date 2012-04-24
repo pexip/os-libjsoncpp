@@ -1,0 +1,39 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+DESTDIR=debian/tmp
+VERSION=$(shell sed -r s/-rc[0-9]+$$// version)
+G++VERSION=$(shell g++ -dumpversion)
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+	scons platform=linux-gcc
+	python $(CURDIR)/doxybuild.py --doxygen=/usr/bin/doxygen
+
+override_dh_auto_clean:
+	dh_auto_clean
+	scons -c platform=linux-gcc
+	$(RM) test/data/test_*_*.actual test/data/test_*_*.actual-rewrite \
+		test/data/test_*_*.process-output test/data/test_*_*.rewrite
+	find . -iname *.pyc -d | xargs $(RM)
+	find . -iname .sconsign.dbm.dblite | xargs $(RM)
+	$(RM) -r dist/*
+	$(RM) -r doc/doxyfile
+
+override_dh_auto_install:
+	dh_auto_install
+	install -vd $(DESTDIR)/usr/lib
+	install -vd $(DESTDIR)/usr/lib/pkgconfig
+	install -vd $(DESTDIR)/usr/include/json
+	install -vd $(DESTDIR)/usr/share/doc/jsoncpp-api-html
+	install -v libs/linux-gcc-$(G++VERSION)/libjson_linux-gcc-$(G++VERSION)_libmt.so \
+		$(DESTDIR)/usr/lib/libjsoncpp.so.$(VERSION)
+	install -v libs/linux-gcc-$(G++VERSION)/libjson_linux-gcc-$(G++VERSION)_libmt.a \
+		$(DESTDIR)/usr/lib/libjsoncpp.a
+	install -v -m 0644 debian/pkgconfig/* $(DESTDIR)/usr/lib/pkgconfig
+	install -v include/json/* $(DESTDIR)/usr/include/json
+	install -v dist/doxygen/jsoncpp-api-html-$(VERSION)*/* \
+		$(DESTDIR)/usr/share/doc/jsoncpp-api-html

@@ -1,0 +1,18 @@
+libjsoncpp (0.6.0~rc2-3) unstable; urgency=low
+
+  * Bug fix: "ftbfs with GCC-4.7", thanks to Matthias Klose (Closes: #667246).
+
+ -- José Luis Segura Lucas <josel.segura@gmx.es>  Tue, 24 Apr 2012 09:10:15 +0200
+
+libjsoncpp (0.6.0~rc2-2) unstable; urgency=low
+
+  * Bug fix: "jsoncpp headers installed in unexpected location", thanks to
+    Jim Garrison (Closes: #650702).
+
+ -- José Luis Segura Lucas <josel.segura@gmx.es>  Fri, 02 Dec 2011 09:12:31 +0100
+
+libjsoncpp (0.6.0~rc2-1) unstable; urgency=low
+
+  * Initial release (Closes: #617325)
+
+ -- José Luis Segura Lucas <josel.segura@gmx.es>  Sun, 24 Oct 2011 13:47:45 +0200

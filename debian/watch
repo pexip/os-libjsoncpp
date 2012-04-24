@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/\.-rc(\d+)$//; s/-rc(\d+$)/~rc$1/" \
+  http://sf.net/jsoncpp/jsoncpp-src-(\d+\.\d+\.\d+(-rc\d+)?).tar.gz
+

@@ -1,0 +1,14 @@
+Added some environment variables to the Scons build system to add the
+SONAME of the shared library
+Index: libjsoncpp-0.6.0~rc2/SConstruct
+===================================================================
+--- libjsoncpp-0.6.0~rc2.orig/SConstruct	2010-03-13 11:59:50.000000000 +0100
++++ libjsoncpp-0.6.0~rc2/SConstruct	2011-11-07 14:23:05.466419789 +0100
+@@ -120,6 +120,7 @@
+ elif platform.startswith('linux-gcc'):
+     env.Tool( 'default' )
+     env.Append( LIBS = ['pthread'], CCFLAGS = "-Wall" )
++    env.Append( LINKFLAGS='-Wl,-soname,libjsoncpp.so.0')
+     env['SHARED_LIB_ENABLED'] = True
+ else:
+     print "UNSUPPORTED PLATFORM."
