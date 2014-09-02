@@ -1,11 +1,13 @@
 Source: libjsoncpp
 Priority: extra
-Maintainer: José Luis Segura Lucas <josel.segura@gmx.es>
-Uploaders: Cleto Martin <cleto.martin@gmail.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: José Luis Segura Lucas <josel.segura@gmx.es>
+XSBC-Pexip-Original-Uploaders: Cleto Martin <cleto.martin@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), scons, python, doxygen
 Standards-Version: 3.9.3
 Section: libs
 Homepage: http://jsoncpp.sourceforge.net/
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: libjsoncpp0
 Section: libs

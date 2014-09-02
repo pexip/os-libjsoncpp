@@ -1,3 +1,9 @@
+libjsoncpp (0.6.0~rc2-3pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 02 Sep 2014 21:39:39 +0000
+
 libjsoncpp (0.6.0~rc2-3) unstable; urgency=low
 
   * Bug fix: "ftbfs with GCC-4.7", thanks to Matthias Klose (Closes: #667246).
