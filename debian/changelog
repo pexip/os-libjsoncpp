@@ -1,3 +1,13 @@
+libjsoncpp (0.6.0~rc2-3.1) unstable; urgency=medium
+
+  [ Markus Koschany ]
+  * Non-maintainer upload.
+  * Add value-as-string.patch. (Closes: #753560)
+    Fix conversion of numerical values to string that caused crashes in
+    reverse-dependencies such as Minetest.
+
+ -- Martin Quinson <mquinson@debian.org>  Wed, 19 Nov 2014 09:14:06 +0100
+
 libjsoncpp (0.6.0~rc2-3) unstable; urgency=low
 
   * Bug fix: "ftbfs with GCC-4.7", thanks to Matthias Klose (Closes: #667246).
