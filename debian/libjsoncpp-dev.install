@@ -1,4 +1,5 @@
-usr/include/* usr/include/jsoncpp
-usr/lib/pkgconfig
-usr/lib/lib*.a
-usr/share/doc/jsoncpp-api-html	usr/share/doc/libjsoncpp-dev/
+usr/include
+usr/lib/*/*.a
+usr/lib/*/*.so
+usr/lib/*/pkgconfig
+usr/lib/*/cmake
