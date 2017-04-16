@@ -1,1 +1,2 @@
 fix-SConstruct-soname.patch
+value-as-String.patch

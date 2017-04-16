@@ -1,3 +1,19 @@
+libjsoncpp (0.6.0~rc2-3.1pexip1) pexip; urgency=low
+
+  * New upstream version
+
+ -- John-Mark Bell <jmb@pexip.com>  Sun, 16 Apr 2017 20:22:41 +0100
+
+libjsoncpp (0.6.0~rc2-3.1) unstable; urgency=medium
+
+  [ Markus Koschany ]
+  * Non-maintainer upload.
+  * Add value-as-string.patch. (Closes: #753560)
+    Fix conversion of numerical values to string that caused crashes in
+    reverse-dependencies such as Minetest.
+
+ -- Martin Quinson <mquinson@debian.org>  Wed, 19 Nov 2014 09:14:06 +0100
+
 libjsoncpp (0.6.0~rc2-3pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
