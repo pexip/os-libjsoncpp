@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0), scons, python, doxygen
 Standards-Version: 3.9.3
 Section: libs
 Homepage: http://jsoncpp.sourceforge.net/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: libjsoncpp0
 Section: libs
