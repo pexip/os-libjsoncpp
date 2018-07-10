@@ -1,3 +1,9 @@
+libjsoncpp (1.7.4-3pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 11:18:40 +0000
+
 libjsoncpp (1.7.4-3) unstable; urgency=medium
 
   * Add patch to fix pkg-config file
