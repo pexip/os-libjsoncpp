@@ -1,11 +1,12 @@
-Format: http://dep.debian.net/deps/dep5
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: jsoncpp
-Upstream-Contact: blep@users.sourceforge.net
-Source: http://jsoncpp.sourceforge.net/
+Upstream-Contact: Christopher Dunn <cdunn2001@gmail.com>
+Source: https://github.com/open-source-parsers/jsoncpp
 
 Files: *
 Copyright: 2007-2010 Baptiste Lapilleur
-License: MIT License
+           2010-2015 Christopher Dunn
+License: Expat_or_PublicDomain_or_DualExpatPD
  The JsonCpp library's source code, including accompanying documentation,
  tests and demonstration applications, are licensed under the following
  conditions...
@@ -64,6 +65,7 @@ License: MIT License
 
 Files: debian/*
 Copyright: 2011,2012 José Luis Segura Lucas <josel.segura@gmx.es>
+           2015 Peter Spiess-Knafl <psk@autistici.org>
 License: GPL-3+
  This library is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
